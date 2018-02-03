@@ -1,0 +1,19 @@
+<div class="text-center">
+  <h3>Contatos</h3>
+</div>
+
+<br>
+
+<table class="table">
+
+  <tr>
+    <th>Nome</th>
+    <th>Nascimento</th>
+  </tr>
+
+  <tr *ngFor="let contato of contatos.pessoas">
+    <td>{{contato.nome}}</td>
+    <td>{{contato.dataNascimento | date:'dd/MM/yyyy'}}</td>
+  </tr>
+
+</table>
